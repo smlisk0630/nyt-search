@@ -34,8 +34,9 @@ function updatePage(NYTData) {
     var pTag=$("<p>");
 
     // Retrieves and adds headline and article URL to div
-    div.text(results[i].headline.main);
+    //div.text(results[i].headline.main);
     aTag.attr("href",results[i].web_url);
+    aTag.text(results[i].headline.main);
     div.append(aTag);
 
     // Retrieves and adds byline to div
